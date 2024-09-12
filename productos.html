@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre del Sitio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/imgs/logo.jpg" alt="Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contactenos.html">Contáctenos</a></li>
+            </ul>
+        </nav>
+        <div id="dia-semana"></div>
+    </header>
+
+    <div class="portada">
+        <img src="/imgs/banner.jpg" alt="Portada">
+    </div>
+
+    <main>
+        <h1>Nuestros Productos de Pastelería</h1>
+        <div class="catalogo-productos">
+            <div class="producto">
+                <img src="croissant.jpg" alt="Croissant" class="img-producto">
+                <h2>Croissant</h2>
+                <p>Un delicioso croissant de hojaldre suave y mantecoso.</p>
+                <p class="precio">Precio: $<span id="precio-croissant">3.50</span></p>
+                <button onclick="agregarAlCarrito('Croissant', 3.50)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="tarta_fresa.jpg" alt="Tarta de Fresas" class="img-producto">
+                <h2>Tarta de Fresas</h2>
+                <p>Una tarta refrescante con fresas frescas.</p>
+                <p class="precio">Precio: $<span id="precio-tarta-fresa">5.00</span></p>
+                <button onclick="agregarAlCarrito('Tarta de Fresas', 5.00)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="muffin.jpg" alt="Muffin de Chocolate" class="img-producto">
+                <h2>Muffin de Chocolate</h2>
+                <p>Esponjoso muffin de chocolate con trozos de chocolate fundido.</p>
+                <p class="precio">Precio: $<span id="precio-muffin">2.75</span></p>
+                <button onclick="agregarAlCarrito('Muffin de Chocolate', 2.75)">Agregar al carrito</button>
+            </div>
+            <!-- Añadir más productos si es necesario -->
+        </div>
+    
+        <h2>Carrito de Compras</h2>
+        <div id="carrito">
+            <p>Tu carrito está vacío.</p>
+            <p id="total">Total: $0.00</p> <!-- Mostrar el total del carrito -->
+        </div>
+    </main>
+    
+    
+    
+    
+
+    <footer>
+        <p>Daphne Wu 2016. Sitio Web con los derechos reservados.</p>
+    </footer>
+</body>
+</html>
